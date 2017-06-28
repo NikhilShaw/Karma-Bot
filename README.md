@@ -7,3 +7,10 @@ The bot has following personalities:
  3. Maria, the depressed girl (fear)
  4. Disgust bot (disgust)  ## TO DO, INCOMPLETE DATA
  5. Sad bot (sadness)      ## TO DO, INCOMPLETE DATA
+
+Dependencies: 
+1. Chatterbot api
+2. IBM Watson cloud services
+
+Requirements:
+1. Signup for [IBM Bluemix](https://console.bluemix.net/registration/?target=/catalog/services/alchemyapi/)
