@@ -276,7 +276,6 @@ while True:
     except NewConnectionError:
         print "Check your internet connection"
         continue
-    print "1"
     OutputStr=(json.dumps(response, indent=2))
     OutputStr= OutputStr.split(' ')
     ## storing values in different variable for use
@@ -309,17 +308,21 @@ while True:
             if sadness>max_emotion_value:
                 max_emotion_value = sadness
                 max_emotion = "sadness"
-    print "2"
     print max_emotion
     if max_emotion=="anger":
+        print "Hitler triggered"
         print angry_bot.get_response(input_text)
     elif max_emotion == "joy":
+        print "Mother Teresa triggered"
         print joy_bot.get_response(input_text)
     elif max_emotion == "fear":
+        print "Maria, depressed girl triggered"
         print fear_bot.get_response(input_text)
     elif max_emotion == "disgust":
+        print "Disgust bot trigerred"
         print disgust_bot.get_response(input_text)
     elif max_emotion == "sadness":
+        print "Sad bot trigerred"
         print sad_bot.get_response(input_text)
       
     ##print "Immediate Emotions: \n" + "anger: " + anger + "\njoy: " + joy + "\nfear: " + fear + "\ndisgust: " + disgust + "\nsadness: " + sadness
