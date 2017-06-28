@@ -142,6 +142,57 @@ joy_bot = ChatBot("Joy bot", read_only =True, filters=["chatterbot.filters.Repet
     logic_adapters=[
         "chatterbot.logic.BestMatch"])
 conversation_joy=[
+    "Let us always meet each other with smile, for the smile is the beginning of love.",
+"I have found the paradox, that if you love until it hurts, there can be no more hurt, only more",
+"I see God in every human being. When I wash the leper's wounds I feel I am nursing the lord himself. Is it not a beautiful experience?",
+"If you judge people, you have no time to love them",
+"We are made by love, we are made of love, and we are made for love",
+"People are often unreasonable and self-centered. Forgive them anyway.",
+"If you are hones, people may cheat you. Be honest anyway.",
+"Everytime you smile at someonem it is an action of love, a gift to that person, a beautiful thing.",
+"If you judge people, you have no time to love them.",
+"Kind words can be short and easy to speak, but their echoes are truly endless.",
+"The past cannot be changed, forgotten, edited or erased; it can only be accepted.",
+"Life is an opppurtinity, benefit from it.",
+"We shall never know all the good that a simple smile can do.",
+"Do things for people not because of who they are or what they will do in return, but because of who you are.",
+"Its not hom much we give, but how much love we put into giving.",
+"Don't look for big things, just do small things with great love.",
+"Wherever God has put you that is your vocation. It is not what we do but how much love we put in to it.",
+"God speaks in the silence of the heart and we listen, and then we speak to God from the fullness of our heart.",
+"If we have no peace, it is because we have forgotten wee belong to each other.",
+"We complete in each other what is lacking in our relationship with Christ.",
+"I alone cannot change the world, but I can cast a stone across the waters to create many ripples.",
+"Peace begins with a smile.",
+"Be faithful in small things because it is in them that your strength lies.",
+"If you are discouraged it is a sign of pride because it shows you trust in your own powers",
+"I see God in the eyes of every child - every unwanted child is welcomed by us.",
+"Spread love everwher you go let no ine ver come to you without leaving happier.",
+"Be happy in the moment, that's enough. Each moment is all we need, not more.",
+"Today, more than ever, we need to pray for the light to know the will of God.",
+"I would rather make mistakes in kindness and compassion than work miracles in unkindness and hardness.",
+"Let us always meet each other with smile, for the smile is the beginning of love.",
+"Let us make one point, that we meet each other with a smile when it is difficult to smile. Smile at each other, make time...",
+"The Simple PathSilence is PrayerPrayer is FaithFaith is LoveLove is ServiceThe Fruit of Service is Peace",
+"Words that do not give the light of Christ increase the darkness.",
+"We cannot do great things on this Earth, only small things with great love.",
+"The openness of our hearts and minds can be measured by hiow wide we draw the circle of what we call family.",
+"If you want to bring happiness to the whole world, go home and love your family.",
+"I'm a little pencil in the hand of a writing God, who is sending a love letter to the world.",
+"Joy is prayer: joy is strength: joy is love; joy is a net of love by which you can catch souls.",
+"I do not pray for success, I ask for faithfulness.",
+"I have found the paradox that if I love until it hurts, then there is no hurt, but only more love.",
+"I can do things you cannot, you can do things I cannot, together we can do great things",
+"If you can't feed a hundred people, feed just one.",
+"Real prayer is union with God, a union as vital as that of the vine to the branch..",
+"Faith in action is Love and love in action is Service.",
+"The first requirement for prayer is silence. People of prayer are people of silence.",
+"I have found the paradox, that if you love until it hurts, there can be no more hurt, only more love.",
+"Some people come in your life as blessings. Some come in your life as lessons.",
+"Our aim is to quench this infinite thirst of a God made man.",
+"Do not let the past disturb you. Leave everything in the Sacred Heart & begin again with joy."
+
+
     ]
 
 joy_bot.set_trainer(ListTrainer)
@@ -225,6 +276,7 @@ while True:
     except NewConnectionError:
         print "Check your internet connection"
         continue
+    print "1"
     OutputStr=(json.dumps(response, indent=2))
     OutputStr= OutputStr.split(' ')
     ## storing values in different variable for use
@@ -257,8 +309,9 @@ while True:
             if sadness>max_emotion_value:
                 max_emotion_value = sadness
                 max_emotion = "sadness"
-    
-    if max_emotion=="angry":
+    print "2"
+    print max_emotion
+    if max_emotion=="anger":
         print angry_bot.get_response(input_text)
     elif max_emotion == "joy":
         print joy_bot.get_response(input_text)
