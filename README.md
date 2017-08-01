@@ -8,11 +8,11 @@ The bot has following personalities:
  4. Disgust bot (disgust)  ## TO DO, INCOMPLETE DATA
  5. Sad bot (sadness)      ## TO DO, INCOMPLETE DATA
 
-Dependencies: 
+## **Dependencies:** 
  1. Chatterbot api
  2. IBM Watson cloud services
 
-Requirements:
+## **Requirements:**
  1. Signup for [IBM Bluemix](https://console.bluemix.net/registration/?target=/catalog/services/alchemyapi/)
  2. Login [IBM Bluemix](https://idaas.iam.ibm.com/idaas/mtfim/sps/authsvcPolicyId=urn:ibm:security:authentication:asf:basicldapuser)
  3. Go to Watson -> Natural Language Understanding -> Create a Free Plan
